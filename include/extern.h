@@ -5,7 +5,11 @@
 #ifndef EXTERN_H
 #define EXTERN_H
 
+#ifdef __cplusplus
+#define E extern "C"
+#else
 #define E extern
+#endif
 
 /* ### alloc.c ### */
 
