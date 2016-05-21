@@ -2,8 +2,8 @@
 
 #include "NHWrapper.h"
 
+#define GUISTUB
 #include "hack.h"
-#include "extern.h"
 
 namespace NetHack
 {
