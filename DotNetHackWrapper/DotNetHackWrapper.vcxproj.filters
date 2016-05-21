@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Source Files\C_code">
       <UniqueIdentifier>{277173db-e977-469b-b38f-292341702f8d}</UniqueIdentifier>
     </Filter>
@@ -349,6 +345,63 @@
       <Filter>Source Files\C_code</Filter>
     </ClCompile>
     <ClCompile Include="..\src\o_init.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\winnt\nhdefkey.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\winnt\ntsound.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\winnt\nttty.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\winnt\stubs.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sys\winnt\winnt.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhaskyn.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhdlg.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhfont.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhinput.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhmain.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhmap.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhmenu.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhmsgwnd.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhrip.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhsplash.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhstatus.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mhtext.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\mswproc.c">
+      <Filter>Source Files\C_code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\win\win32\winhack.c">
       <Filter>Source Files\C_code</Filter>
     </ClCompile>
   </ItemGroup>

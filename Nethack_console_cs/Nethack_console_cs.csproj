@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.vcxproj">
+    <ProjectReference Include="..\DotNetHackWrapper\DotNetHackWrapper.vcxproj">
       <Project>{7c029d02-5fa8-4883-bbd4-3a04cb1f0ce1}</Project>
-      <Name>Wrapper</Name>
+      <Name>DotNethackWrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

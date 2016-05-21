@@ -4,11 +4,12 @@
 
 using namespace System;
 
-namespace Nethack {
+namespace NetHack
+{
     public ref class Wrapper
     {
     public:
+        Wrapper();
         void MoveLoop(bool resuming);
-        // TODO: Add your methods for this class here.
     };
 }

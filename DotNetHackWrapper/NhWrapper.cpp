@@ -5,8 +5,11 @@
 #include "hack.h"
 #include "extern.h"
 
-namespace Nethack
+namespace NetHack
 {
+    Wrapper::Wrapper()
+    {}
+
     void Wrapper::MoveLoop(bool resuming)
     {
         moveloop(resuming);
