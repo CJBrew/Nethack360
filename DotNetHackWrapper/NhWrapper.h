@@ -11,5 +11,7 @@ namespace NetHack
     public:
         Wrapper();
         void MoveLoop(bool resuming);
+        bool Init();
+        void Exit();
     };
 }

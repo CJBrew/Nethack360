@@ -11,6 +11,17 @@ namespace Nethack_console_cs
         private static void Main( string[] args )
         {
             Console.WriteLine( "This is DotNetHack test console" );
+
+            try
+            {
+                NetHack.Wrapper _wrapper = new NetHack.Wrapper();
+
+                _wrapper.MoveLoop( false );
+            }
+            catch ( Exception ex )
+            {
+                Console.WriteLine( ex.ToString() );
+            }
         }
     }
 }

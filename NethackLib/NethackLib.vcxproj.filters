@@ -468,5 +468,8 @@
     <ClCompile Include="..\sys\share\pcmain.c">
       <Filter>Source Files\sys_share</Filter>
     </ClCompile>
+    <ClCompile Include="..\sys\share\pcunix.c">
+      <Filter>Source Files\sys_share</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
