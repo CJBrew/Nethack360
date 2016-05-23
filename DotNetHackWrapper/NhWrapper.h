@@ -1,8 +1,8 @@
 #pragma once
 
-#define WIN32
-
+#include <memory>
 using namespace System;
+class NativeWrapper;
 
 namespace NetHack
 {
@@ -10,8 +10,12 @@ namespace NetHack
     {
     public:
         Wrapper();
+        ~Wrapper();
+
         void MoveLoop(bool resuming);
         bool Init();
         void Exit();
+    private:
+        NativeWrapper* nativeWrapper;
     };
 }

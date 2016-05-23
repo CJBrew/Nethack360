@@ -2,35 +2,31 @@
 
 #include "NHWrapper.h"
 
-#define GUISTUB
-#include "hack.h"
-
-extern "C"  boolean FDECL(pcmain, (int, char **));
-extern "C" void FDECL(nethack_exit, (int));
+#include "NativeWrapper.h"
 
 namespace NetHack
 {
-    Wrapper::Wrapper()
+    Wrapper::Wrapper() : nativeWrapper(new NativeWrapper())
     {
-        Init();
-
-        MoveLoop(0);
-        Exit();
+    }
+    Wrapper::~Wrapper()
+    {
+        delete nativeWrapper;
     }
 
     void Wrapper::Exit()
     {
-        nethack_exit(EXIT_SUCCESS);
+        //nethack_exit(EXIT_SUCCESS);
     }
     bool Wrapper::Init()
     {
-        sys_early_init();
+        nativeWrapper->Init();
 
-        return (bool)pcmain(0, 0);
+        return false;
     }
 
     void Wrapper::MoveLoop(bool resuming)
     {
-        moveloop(resuming);
+        nativeWrapper->MainLoop();
     }
 }
